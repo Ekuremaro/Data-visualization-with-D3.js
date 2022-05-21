@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+.home{
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  @media screen and (max-width: 1000px){
+    flex-direction: column;
+  }
+      
+  
+}
+.text-container{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.label{
+    display: block;
+    margin-bottom: 8px;
+}
+.label--terms{
+    display: inline;
+    padding-left: 1rem;
+}
+.img-container{
+    flex-basis: 50%;
+    background-color: rgb(248, 247, 247);
+
+}
+.img{
+    width: 90%;
+    padding-top: 5rem;
+}
+.form-container{
+    flex-basis: 50%;
+}
+.form-heading{
+    font-weight: bold;
+    padding: 3rem 5rem;
+    color: rgb(37, 37, 79);
+ 
+}
+.form{
+    padding: 0 5rem 3rem 5rem;
+    color: rgb(37, 37, 79);
+    
+}
+.form--item{
+    padding: 0.4rem 0;
+}
+.form--item-terms{
+    padding: 2rem 0;
+}
+.form-button{
+    color: white;
+    background-color: rgb(18, 156, 242);
+    border: none;
+    padding: 0.7rem 3rem;
+    border-radius: 4px;
+}
+.input{
+    width: 80%;
+    padding: 0.6rem;
+    
+}
+
+.input--number{
+    width: 40%
+}
+
+.input--checkbox{
+    width: fit-content;
+    transform: scale(1.5);
+}
+#error,#error--name,#error--number,#error--password,#error--pass,#error--terms{
+    color: red;
+}
